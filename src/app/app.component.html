@@ -1,21 +1,265 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="container-fluid topstrip"></div>
+<div class="container-fluid navbg pr-0">
+  <nav class="navbar navbar-expand-lg newfloatnav pr-0">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navb">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="navbar-brand newfloatnavitem" href="javascript:void(0)">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand newfloatnavitem" href="javascript:void(0)">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand newfloatnavitem" href="javascript:void(0)">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand newfloatnavitem" href="javascript:void(0)">Updates</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand newfloatnavitem" href="javascript:void(0)">More Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand newfloatnavitem" href="javascript:void(0)">Contact</a>
+        </li>
+      </ul>
+      <div class="my-2 my-lg-0 newfloatphone">
+        <span class="iconphone"><i class="fa fa-volume-control-phone"></i></span>&nbsp;
+        <span class="phonetext">+91 8123456789</span>
+      </div>
+      <div class="ml-auto newfloatsearch">
+        <span class="iconsearch"><i class="fa fa-search"></i></span>&nbsp;
+      </div>
+    </div>
+  </nav>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+
+<div class="container-fluid newfloatbody px-0">
+  <div class="container-fluid bgopacity ">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 article1" *ngFor="let x of applicationinfo">
+          <h4 class="welnwefloat" >{{x.welcomeheading}}
+           
+          </h4>
+          <h1 class="headingnewfloat">{{x.nametitle}}</h1>
+          <p class="datanewfloat">{{x.description}}<a href="{{x.url}}"
+              class="seemoretextnwefloat">SEE MORE</a></p>
+          <button type="button" class="btn newfloatbtn">Meet the doctor</button>
+        </div>
+        <div class="col-sm-6 px-0 article2">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item border border-top-0 border-bottom-0 border-left-0">
+              <a class="nav-link active" data-toggle="tab" href="#home">Book Appointment</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" data-toggle="tab" href="#menu1">Have an enquiry?</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+              <div class="form-group selectnewfloat">
+                <label for="sel1" class="purposenew">Purpose</label>
+                <select class="form-control selectboxnewfloat" id="sel1" name="sellist1">
+                  <option>Consultation</option>
+                  <!-- <option>2</option>
+                  <option>3</option>
+                  <option>4</option> -->
+                </select>
+                <div class="datepickerblock mt-3">
+                  <div class="row">
+                    <div class="col-sm-1 px-0">
+                      <button type="button" class="btn btnleftarrow"><i
+                          class='fas fa-caret-left leftarrow'></i></button>
+                    </div>
+                    <div class="col-sm-10 px-0">
+                      <input type="text" class="form-control inputnewfloat" value="Today(sun,7 Aug)">
+                    </div>
+                    <div class="col-sm-1 px-0">
+                      <button type="button" class="btn btnrightarrow"><i
+                          class='fas fa-caret-right rightarrow'></i></button>
+                    </div>
+                  </div>
+                  <div class="row mrt1">
+                    <div class="col-sm-3 dayicons border">
+                      <span><i class='fas fa-sun morningicon'></i></span>
+                      <span class="morningtime">Morning</span>
+                    </div>
+                    <div class="col-sm-9">
+                      <div class="row">
+                        <div class="col-sm-4 border">
+                          <span class="timetext">10:00 AM</span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext">10:30 AM</span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext strike"><del>11:00 AM</del> </span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-4 border">
+                            <span class="timetext"><del>11:30 AM</del></span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext"><del>12:00 PM</del></span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext">-</span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-4 border">
+                            <span class="timetext">1:00 PM</span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext"><del>1:30 PM</del></span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext"><del>2:00 PM</del></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row ">
+                    <div class="col-sm-3 dayicons border">
+                      <span><i class='fas fa-cloud-sun afternoonicon'></i></span>
+                      <span class="afternoontime">Afternoon</span>
+                    </div>
+                    <div class="col-sm-9">
+                      <div class="row">
+                        <div class="col-sm-4 border">
+                            <span class="timetext">2:30 PM</span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext">-</span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext">-</span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-4 border">
+                            <span class="timetext"><del>4:00 PM</del></span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext"><del>4:30 PM</del></span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext">5:00 PM</span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                            <div class="col-sm-4 border">
+                            <span class="timetext"><del>5:30 PM</del></span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext backclr">6:00 PM</span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext">6:30 PM</span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-3 dayicons border">
+                      <span><i class='far fa-moon nighticon'></i></span>
+                      <span class="evngtime">Night</span>
+                    </div>
+                    <div class="col-sm-9">
+                      <div class="row">
+                        <div class="col-sm-4 border">
+                            <span class="timetext"><del>7:00 PM</del></span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext"><del>7:30 PM</del></span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext">-</span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-4 border">
+                            <span class="timetext">8:30 PM</span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext">9:00 PM</span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext">9:30 PM</span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-4 border">
+                            <span class="timetext">10:00 PM</span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext">-</span>
+                        </div>
+                        <div class="col-sm-4 border">
+                            <span class="timetext">-</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="btnsection mt-3">
+                  <button type="button" class="btn btn-block contbtn" value="continue">CONTINUE</button>
+                </div>
+              </div>
+            </div>
+            <div id="menu1" class="container tab-pane fade"><br>
+
+            </div>
+          </div>
+
+
+
+
+          <!-- <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+            <li class="tabitem"><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <h3>HOME</h3>
+              <p>Some content.</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+              <h3>Menu 1</h3>
+              <p>Some content in menu 1.</p>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <img src="../assets/Capture.JPG"> -->
+</div>
+<div class="container-fluid bottomstrip"></div>
+
+
+
+
 
 <router-outlet></router-outlet>

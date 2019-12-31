@@ -1,0 +1,247 @@
+.topstrip{
+    height:3px !important;
+    background-color:#87d7d6;
+}
+.navbg{
+    background-color: white;
+}
+.newfloatnav{
+    background-color: white;
+    color:#ccc;
+    height:80px;
+    margin-left: 15%;
+}
+.newfloatbody{
+    border-top: 1px solid #ccc;
+}
+.newfloatnavitem{
+    color:#c2c2c2 !important;
+    padding-left: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: inherit;
+
+}
+.leftm{
+    margin-left:-32px;
+}
+.fa-volume-control-phone{
+    font-size:24px;
+    transform:rotate(320deg);
+    color:#acacac;
+}
+.phonetext{
+    color:#acacac;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: inherit;
+}
+.newfloatphone{
+    padding: 5px 20px;
+    border: 1px solid #acacac;
+    border-radius: 25px;
+}
+.newfloatsearch{
+    padding: 5px 5px 5px 14px;
+    border: 1px solid #acacac;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: 0px;
+
+}
+.newfloatbody{
+    background-image: url('https://images.unsplash.com/photo-1486049252259-45184399c5b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'); 
+    background-size: cover;
+    height: 695px;
+    background-position: right;
+}
+.bgopacity{
+    background-color: rgba(0, 0, 0, 0.5);
+    height:695px;
+}
+.bottomstrip{
+    height:10px !important;
+    background-color:#87d7d6;
+}
+.article1{
+    margin-top: 20%;
+}
+.welnwefloat{
+    color:white;
+    font-family:sans-serif;
+    font-size:24px;
+    font-weight:700;
+    text-transform: uppercase;
+}
+.headingnewfloat{
+    color:white; 
+    font-size: 55px;
+    font-weight: 700;
+}
+.datanewfloat{
+    color:white;
+    font-family: inherit;
+    font-size: 15px;
+    text-align: justify;
+    font-weight: 500;
+    line-height: 1.8;
+}
+.seemoretextnwefloat{
+    color:#87d7d6;
+    text-decoration:underline;
+}
+.newfloatbtn{
+    background-color:white;
+    color:black;
+    font-size:20px;
+    font-family:inherit;
+    border:1px solid #fff;
+    border-radius:20px;
+    font-weight: 500;
+    margin-top: 35px;
+}
+.article2{
+    margin-top: 10%;
+    background-color:white;
+
+}
+.nav-link{
+    color:#acacac;
+    display: inline-block;
+    border-left: none;
+    border-right: none;
+    padding: 15px 78px;
+    text-align: center;
+    border-bottom:none;
+}
+.nav-link.active{
+    color:#87d7d6;
+    border-bottom: 4px solid #87d7d6;
+    text-align: center;
+    display: inline-block;
+    border-left: none;
+}
+.nav-link.active:last-child{
+    border-right:none;
+}
+.purposenew{
+    position: relative;
+    left: 13px;
+    background-color: #fff;
+    color: #87d7d6;
+    font-size: 16px;
+
+}
+.selectboxnewfloat{
+    height: 44px;
+    margin-top: -20px;
+    border: 1px solid #87d7d6;
+    -webkit-appearance: none;
+    background: url('https://cdn1.iconfinder.com/data/icons/basic-ui-icon-rounded-colored/512/icon-32-512.png') no-repeat;  /*Adds background-image*/
+    background-position: 98%;
+    background-size: 13px;
+    padding-left: 20px;
+}
+.datepickerblock{
+    padding:0px 14px 0px;
+    border:1px solid #bbbb;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+}
+.btnleftarrow{
+    background-color: #eee;
+    padding: 3px 18px;
+    color: #87d7d6;
+    font-size: 20px;
+    border: 1px solid #eee;
+    border-right: none;
+
+}
+.btnrightarrow{
+    background-color: #eee;
+    padding: 3px 18px;
+    color: #87d7d6;
+    font-size: 20px;
+    border: 1px solid #eee;
+    border-left: none;
+
+}
+.inputnewfloat{
+    border-radius: 0px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+.dayicons{
+    padding: 15px;
+    /* border: 1px solid grey; */
+}
+.morningicon,.nighticon{
+    font-size: 30px;
+    text-align: center;
+    color: grey;
+    display: block;
+}
+.morningtime,.afternoontime,.evngtime{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+.afternoonicon{
+    font-size: 30px;
+    text-align: center;
+    color: orange;
+    display: block;
+}
+.timetext{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+}
+.mrt1{
+    margin-top: -2px;
+}
+.contbtn{
+    background-color: #87d7d6;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+del{
+    color: #ddd;
+}
+.backclr{
+    background-color:#87d7d6; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
